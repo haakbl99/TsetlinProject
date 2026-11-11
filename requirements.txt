@@ -1,0 +1,4 @@
+numpy~=2.5.4
+PyHierarchicalTsetlinMachineCUDA~=0.3.3
+spacy~=3.8.18
+scikit-learn~=1.9.1
