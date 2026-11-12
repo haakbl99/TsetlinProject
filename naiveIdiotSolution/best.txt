@@ -1,0 +1,35 @@
+Best combination so far (out of 64 finished runs), chosen by validation accuracy
+================================================================================
+
+Run: f500_c1000_T500_w1_p50000_sb8_lem1_stop0_df2
+Folder: /home/hufsa/TsetlinProject/TsetlinProject/naiveIdiotSolution/f500_c1000_T500_w1_p50000_sb8_lem1_stop0_df2
+
+Settings:
+  features         500
+  clauses          1000
+  T                500
+  t_fraction       0.5
+  weighted         True
+  train_pairs      50000
+  state_bits       8
+  lemmatize        True
+  keep_stopwords   False
+  min_df           2
+
+Results:
+  Best validation accuracy  67.1% (epoch 10)
+  Test accuracy             64.78%
+  Test macro-F1             64.24%
+  Accuracy on 'same' pairs  75.31%
+  Accuracy on 'different'   53.73%
+  Cosine baseline           59.0%
+  Training time             641.1 s
+
+Command to reproduce:
+  /home/hufsa/TsetlinProject/TsetlinProject/.venv/bin/python -u /home/hufsa/TsetlinProject/TsetlinProject/main.py --features 500 --number-of-clauses 1000 --T 500 --weighted-clauses --train-pairs 50000 --number-of-state-bits 8 --lemmatize --no-keep-stopwords --min-df 2 --s 1.0 --boost-true-positive-feedback 1 --epochs 20 --runs 1 --seed 42 --cache-dir /home/hufsa/TsetlinProject/TsetlinProject/.cache_20newsgroups --save-model model.pkl
+
+Full output (confusion matrix, per-newsgroup accuracy, learned literals):
+  /home/hufsa/TsetlinProject/TsetlinProject/naiveIdiotSolution/f500_c1000_T500_w1_p50000_sb8_lem1_stop0_df2/output.txt
+
+Trained model:
+  /home/hufsa/TsetlinProject/TsetlinProject/naiveIdiotSolution/f500_c1000_T500_w1_p50000_sb8_lem1_stop0_df2/model.pkl
