@@ -1,0 +1,91 @@
+INFO:__main__:Baseline cosine similarity (threshold 0.023) test accuracy: 60.68
+INFO:__main__:Estimated GPU memory for automata: 61 MB (lower bound)
+INFO:__main__:Run 1/1 (seed 2247): 20 epochs
+INFO:__main__:#1/1 Validation accuracy: 49.35% Training: 68.60s Validation: 2.57s
+INFO:__main__:#1/2 Validation accuracy: 52.50% Training: 61.48s Validation: 2.37s
+INFO:__main__:#1/3 Validation accuracy: 50.50% Training: 50.55s Validation: 2.26s
+INFO:__main__:#1/4 Validation accuracy: 51.70% Training: 46.34s Validation: 2.31s
+INFO:__main__:#1/5 Validation accuracy: 52.80% Training: 39.03s Validation: 2.20s
+INFO:__main__:#1/6 Validation accuracy: 52.25% Training: 38.03s Validation: 2.31s
+INFO:__main__:#1/7 Validation accuracy: 52.30% Training: 35.39s Validation: 2.39s
+INFO:__main__:#1/8 Validation accuracy: 52.15% Training: 33.97s Validation: 0.11s
+INFO:__main__:#1/9 Validation accuracy: 53.60% Training: 33.77s Validation: 2.31s
+INFO:__main__:#1/10 Validation accuracy: 52.70% Training: 32.20s Validation: 2.32s
+INFO:__main__:#1/11 Validation accuracy: 52.80% Training: 42.85s Validation: 2.26s
+INFO:__main__:#1/12 Validation accuracy: 52.90% Training: 30.23s Validation: 2.25s
+INFO:__main__:#1/13 Validation accuracy: 54.10% Training: 29.42s Validation: 2.37s
+INFO:__main__:#1/14 Validation accuracy: 53.40% Training: 29.27s Validation: 2.27s
+INFO:__main__:#1/15 Validation accuracy: 52.10% Training: 28.49s Validation: 0.02s
+INFO:__main__:#1/16 Validation accuracy: 53.60% Training: 30.62s Validation: 0.00s
+INFO:__main__:#1/17 Validation accuracy: 54.00% Training: 30.72s Validation: -0.09s
+INFO:__main__:#1/18 Validation accuracy: 53.80% Training: 30.16s Validation: 0.08s
+INFO:__main__:#1/19 Validation accuracy: 53.00% Training: 28.23s Validation: 2.29s
+INFO:__main__:#1/20 Validation accuracy: 53.45% Training: 29.56s Validation: 0.00s
+INFO:__main__:Run 1: best validation accuracy 54.10% at epoch 13
+INFO:__main__:Run 1: test accuracy 54.28%, macro-F1 54.28%
+
+Last run - test accuracy: 54.28, macro-F1: 54.28
+
+              precision    recall  f1-score   support
+
+   different      0.538     0.544     0.541      2475
+        same      0.548     0.542     0.545      2525
+
+    accuracy                          0.543      5000
+   macro avg      0.543     0.543     0.543      5000
+weighted avg      0.543     0.543     0.543      5000
+
+Confusion matrix (rows = true, columns = predicted):
+               different   same
+  different        1346   1129
+  same             1157   1368
+
+Test accuracy on 'same' pairs by newsgroup:
+  alt.atheism                   56.20%  (121 pairs)
+  comp.graphics                 55.64%  (133 pairs)
+  comp.os.ms-windows.misc       52.03%  (123 pairs)
+  comp.sys.ibm.pc.hardware      51.45%  (138 pairs)
+  comp.sys.mac.hardware         42.48%  (113 pairs)
+  comp.windows.x                56.20%  (137 pairs)
+  misc.forsale                  49.57%  (117 pairs)
+  rec.autos                     49.63%  (135 pairs)
+  rec.motorcycles               45.38%  (119 pairs)
+  rec.sport.baseball            64.35%  (115 pairs)
+  rec.sport.hockey              63.36%  (131 pairs)
+  sci.crypt                     57.45%  (141 pairs)
+  sci.electronics               46.32%  (136 pairs)
+  sci.med                       51.15%  (131 pairs)
+  sci.space                     57.73%  (97 pairs)
+  soc.religion.christian        61.98%  (121 pairs)
+  talk.politics.guns            52.71%  (129 pairs)
+  talk.politics.mideast         69.72%  (142 pairs)
+  talk.politics.misc            46.92%  (130 pairs)
+  talk.religion.misc            51.72%  (116 pairs)
+
+Learned literals and example clauses (last run):
+
+=== different ===
+  Share of included literals that are negated: 100.0% in positive clauses, 100.0% in negative clauses
+  Positive polarity (presence supports the class): (none)
+  Positive polarity (absence supports the class): ¬'A:amsat' ¬'B:assad' ¬'A:salah' ¬'B:constantinople' ¬'B:vandenberg' ¬'A:garry' ¬'B:reston' ¬'A:libxmu' ¬'B:chalcedon' ¬'B:acidophilus' ¬'A:ksc' ¬'B:intestinal' ¬'B:digestive' ¬'A:shoei' ¬'B:xm' ¬'B:ottomans' ¬'B:ximage' ¬'A:khoros' ¬'A:nagarno' ¬'A:hulk'
+  Negative polarity (presence counts against the class): (none)
+  Negative polarity (absence counts against the class): ¬'B:biologist' ¬'B:gxxor' ¬'B:miner' ¬'A:jokerit' ¬'A:zhamnov' ¬'A:waters' ¬'B:sinus' ¬'B:liberation' ¬'A:reuter' ¬'A:xvt' ¬'A:errey' ¬'A:constellation' ¬'B:toplevel' ¬'B:rsaref' ¬'A:theism' ¬'A:odgers' ¬'A:djgpp' ¬'A:vegetable' ¬'A:hamrlik' ¬'A:fluorescent'
+  Clause #968 (weight 148, votes for): ¬A:abolitionist ∧ ¬A:abroad ∧ ¬A:adirondack ∧ ¬A:adl ∧ ¬A:advisory ∧ ¬A:aegean ∧ ¬A:affairs ∧ ¬A:agdam ∧ ¬A:ahmed ∧ ¬A:ahmet ∧ ¬A:aircraft ∧ ¬A:ajs ∧ …+1925
+  Clause #1666 (weight 144, votes for): ¬A:abolish ∧ ¬A:abolitionist ∧ ¬A:abroad ∧ ¬A:abs ∧ ¬A:absence ∧ ¬A:accelerator ∧ ¬A:accidental ∧ ¬A:account ∧ ¬A:accusation ∧ ¬A:acid ∧ ¬A:acidophilus ∧ ¬A:activist ∧ …+1990
+  Clause #616 (weight 143, votes for): ¬A:ab ∧ ¬A:abbey ∧ ¬A:abolitionist ∧ ¬A:absence ∧ ¬A:access ∧ ¬A:accusation ∧ ¬A:acidophilus ∧ ¬A:aclu ∧ ¬A:activist ∧ ¬A:acton ∧ ¬A:acura ∧ ¬A:adaptor ∧ …+1575
+  Clause #1685 (weight -167, votes against): ¬A:abuse ∧ ¬A:acknowledge ∧ ¬A:activist ∧ ¬A:acton ∧ ¬A:adl ∧ ¬A:agency ∧ ¬A:agenda ∧ ¬A:ahmed ∧ ¬A:airbag ∧ ¬A:alicea ∧ ¬A:alien ∧ ¬A:allah ∧ …+986
+  Clause #1945 (weight -146, votes against): ¬A:abbey ∧ ¬A:abolish ∧ ¬A:abolitionist ∧ ¬A:abortion ∧ ¬A:abraham ∧ ¬A:abroad ∧ ¬A:abs ∧ ¬A:accelerate ∧ ¬A:accidental ∧ ¬A:acidophilus ∧ ¬A:adirondack ∧ ¬A:admistration ∧ …+3027
+  Clause #1369 (weight -140, votes against): ¬A:abroad ∧ ¬A:activist ∧ ¬A:adams ∧ ¬A:adapter ∧ ¬A:aerospace ∧ ¬A:anglican ∧ ¬A:ap ∧ ¬A:arab ∧ ¬A:archive ∧ ¬A:arf ∧ ¬A:argic ∧ ¬A:armored ∧ …+325
+
+=== same ===
+  Share of included literals that are negated: 100.0% in positive clauses, 100.0% in negative clauses
+  Positive polarity (presence supports the class): (none)
+  Positive polarity (absence supports the class): ¬'B:miner' ¬'B:biologist' ¬'A:waters' ¬'A:jokerit' ¬'B:gxxor' ¬'B:beyer' ¬'B:reentry' ¬'A:vegetable' ¬'B:astronaut' ¬'B:liberation' ¬'A:ipser' ¬'A:phenylalanine' ¬'A:simmons' ¬'A:djgpp' ¬'A:balcony' ¬'A:outlay' ¬'A:cathy' ¬'A:occupier' ¬'A:xvt' ¬'A:nhlpa'
+  Negative polarity (presence counts against the class): (none)
+  Negative polarity (absence counts against the class): ¬'B:ottomans' ¬'B:dizziness' ¬'A:shoei' ¬'B:xm' ¬'A:garry' ¬'B:assad' ¬'B:vandenberg' ¬'A:libxmu' ¬'B:constantinople' ¬'A:oclock' ¬'B:icccm' ¬'B:ximage' ¬'A:texans' ¬'B:dietary' ¬'B:reston' ¬'A:outfielder' ¬'A:hulk' ¬'A:amsat' ¬'A:idf' ¬'B:chalcedon'
+  Clause #1762 (weight 170, votes for): ¬A:accessory ∧ ¬A:aryan ∧ ¬A:ascii ∧ ¬A:assault ∧ ¬A:bombing ∧ ¬A:briefing ∧ ¬A:conspiracy ∧ ¬A:database ∧ ¬A:deck ∧ ¬A:default ∧ ¬A:digital ∧ ¬A:diplomatic ∧ …+73
+  Clause #484 (weight 155, votes for): ¬A:abbey ∧ ¬A:abide ∧ ¬A:abolitionist ∧ ¬A:abraham ∧ ¬A:achieve ∧ ¬A:acknowledge ∧ ¬A:acupuncture ∧ ¬A:adirondack ∧ ¬A:advisory ∧ ¬A:agnostic ∧ ¬A:ahl ∧ ¬A:ahmed ∧ …+1233
+  Clause #1506 (weight 153, votes for): ¬A:alien ∧ ¬A:alternative ∧ ¬A:amiga ∧ ¬A:ammunition ∧ ¬A:appletalk ∧ ¬A:appressian ∧ ¬A:archie ∧ ¬A:armored ∧ ¬A:array ∧ ¬A:ascii ∧ ¬A:atmosphere ∧ ¬A:atmospheric ∧ …+242
+  Clause #449 (weight -173, votes against): ¬A:ab ∧ ¬A:abide ∧ ¬A:abolish ∧ ¬A:abortion ∧ ¬A:abroad ∧ ¬A:acidophilus ∧ ¬A:adl ∧ ¬A:advocate ∧ ¬A:aeronautics ∧ ¬A:agenda ∧ ¬A:aiaa ∧ ¬A:aid ∧ …+994
+  Clause #595 (weight -156, votes against): ¬A:ajs ∧ ¬A:archive ∧ ¬A:arise ∧ ¬A:army ∧ ¬A:arrogance ∧ ¬A:attorney ∧ ¬A:automatic ∧ ¬A:azeris ∧ ¬A:beauchaine ∧ ¬A:beemer ∧ ¬A:billboard ∧ ¬A:birth ∧ …+217
+  Clause #49 (weight -149, votes against): ¬A:adb ∧ ¬A:agnostic ∧ ¬A:ali ∧ ¬A:amplifier ∧ ¬A:apartment ∧ ¬A:assailant ∧ ¬A:atlanta ∧ ¬A:auction ∧ ¬A:auto ∧ ¬A:backdoor ∧ ¬A:bears ∧ ¬A:best ∧ …+369
