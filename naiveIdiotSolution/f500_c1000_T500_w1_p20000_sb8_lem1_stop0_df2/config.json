@@ -1,0 +1,19 @@
+{
+  "features": 500,
+  "clauses": 1000,
+  "t_fraction": 0.5,
+  "T": 500,
+  "weighted": true,
+  "train_pairs": 20000,
+  "state_bits": 8,
+  "lemmatize": true,
+  "keep_stopwords": false,
+  "min_df": 2,
+  "s": 1.0,
+  "boost": 1,
+  "epochs": 20,
+  "runs": 1,
+  "seed": 42,
+  "categories": null,
+  "extra": []
+}
